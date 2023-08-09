@@ -1,0 +1,387 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    margin-top: 50px;
+}
+
+nav ul li a{
+    position: relative;
+    transition: 0.5s;
+    margin-inline:7px ;
+} 
+
+nav ul li a:hover{
+    color: black;
+}
+
+nav ul li a::before{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0px;
+    height: 3px;
+    background-color: white;
+    transition: 0.5s;
+}
+nav ul li a:hover::before{
+    width: 100%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+.header{
+    background-image:url(../images/bg.jpg);
+    background-position: center center;
+    background-size: 100% 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.layer-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+    z-index: 0;
+}
+
+.caption{
+    z-index: 1000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+
+.caption h3{
+    font-size:60px ;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+header .caption .icon{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.heading{
+    margin: auto;
+    text-align: center;
+}
+
+.heading  h2{
+color:#343434;
+font-size: 40px;
+font-family: 'Montserrat', sans-serif;
+font-weight: 900;
+background-image:url(../images/dots.png);
+width: 300px;
+margin: auto;
+}
+
+/* .typing{
+    font-size: 30px;
+} */
+
+.typing::after{
+    content: "";
+    animation-name:typingfill ;
+    animation-duration:6s ;
+    animation-iteration-count: infinite;
+}
+    
+
+    /*designer*/
+    @keyframes typingfill {
+    0%{content:  "|";}
+    3%{content:  "D|";}
+    5%{content:  "De|";}
+    7%{content:  "Dev|";}
+    10%{content: "Deve|";}
+    13%{content: "Devel|";}
+    16%{content: "Develo|";}
+    18%{content: "Develop|";}
+    21%{content: "Develope|";}
+    24%{content: "Developer|";}
+    
+    31%{content: "Develope|";}
+    33%{content: "Develop|";}
+    35%{content: "Develo|";}
+    37%{content: "Devel|";}
+    39%{content: "Deve|";}
+    41%{content: "Dev|";}
+    43%{content: "De|";}
+    45%{content: "D|";}
+    
+    
+    54%{content: "|";}
+    57%{content: "D|";}
+    59%{content: "De|";}
+    61%{content: "Des|";}
+    63%{content: "Desi|";}
+    65%{content: "Desig|";}
+    67%{content: "Design|";}
+    69%{content: "Designe|";}
+    71%{content: "Designer|";}
+    
+    
+    80%{content: "Designer|";}
+    83%{content: "Designe|";}
+    86%{content: "Design|";}
+    90%{content: "Desig|";}
+    93%{content: "Dei|";}
+    96%{content: "De|";}
+    99%{content: "D|";}
+    
+    
+    
+    
+}
+
+
+.services{
+    background-color: #eee;
+}
+
+.services  .content-serv{
+    border-radius: 5px;
+} 
+
+.my-box{
+    box-shadow: inset 0 0 7px;
+}  
+
+.sp-prog{
+
+    color: #999999;
+}
+
+.services .icon-serv{
+    background-color: #f7f7f7;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    transition: 0.8s;
+}
+
+.services .content-serv:hover .icon-serv{
+    color: white;
+    background-color:black;
+}
+
+.mybtn,.btn-2{
+    padding-inline: 30px;
+}
+
+
+.btn-2{
+    padding-inline: 60px;
+    border: 1px solid black;
+}
+
+.mybtn:hover{
+background-color: white;
+color: black;
+transition: 0.7s;
+
+}
+
+.btn-2:hover{
+    background-color: black;
+    color: white;
+    transition: 0.7s;
+}
+
+.nav-pills .nav-link{
+    color: black;
+    background:none ;
+    transition: 1s;
+}
+
+.nav-pills .nav-link.active{
+    background-color: black;
+}
+
+.nav-pills .nav-link:hover{
+    background-color: black;
+    color: white;
+}
+
+
+.layer{
+    right: 5px;
+    bottom: 5px;
+    top: 5px;
+    left: 5px;
+    transition: all 0.8s;
+    transform: translateY(10px);
+    opacity: 0;
+}
+
+.image:hover .layer{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.layer h5{
+transform: translateY(-20px);
+transition-duration: 0.8s;
+transition-delay: 0.5;
+}
+
+.image:hover  h5{
+    transform: translateY(0px);
+}
+
+.icons .one-icon{
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    transition: 0.5s;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+}
+
+.icons .one-icon:hover{
+    background-color: white ;
+    color: black;
+}
+
+
+
+.image-client img{
+    width: 100px;
+    
+}
+.testimonilas{
+    background-color: #eee;
+}
+
+
+.carousel-indicators  {
+
+top: 100%;
+
+gap: 10px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: gray;
+    transition: 0.5s;
+}
+
+.carousel-indicators [data-bs-target]:hover{
+    background-color: black;
+}
+
+
+.numbering h3{
+    font-weight:900;
+}
+
+
+.team{
+    background-color: #eee;
+}
+
+.lay-team{
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    bottom: 8%;
+    background-color: white;
+    opacity: 0;
+    bottom: 10px;
+    transition-duration: 0.7s; 
+}
+    
+    
+    
+    
+.cont-team:hover .lay-team{
+    transform: rotateY(180deg);
+    opacity: 0.9;
+    z-index: 2;
+}
+
+.image-team:hover img{
+    transition: 0.7s;
+}
+
+.image-team:hover img{
+    transform: scale(1.2);
+}
+
+
+
+.image-team .icons{
+    transform: rotateY(180deg);
+}
+    
+.image-team:hover .icons{
+    transform: rotateY(180deg);
+    z-index: 100;
+}
+    
+.data-team{
+        background-color: #5B5B5B;
+}
+
+.icon-us{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: RGB(238, 238, 238);
+        margin: auto;
+        transition: 0.7s;
+}
+    
+    .icon-us i{
+        font-size: 25px;
+}
+    
+    .us:hover .icon-us{
+    background-color: black;
+    color: white;
+    
+}
+
+textarea{
+border-radius: 7px;
+}
+
+input:focus , textarea:focus
+{
+    border: none;
+    outline: none;
+
+}
+
